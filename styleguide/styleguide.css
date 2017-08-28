@@ -1,0 +1,45 @@
+// COLORS
+// Main: #DC3900
+// Secondary: #2E2507
+// Accents: #EBC62A,#FCF9F0,#E17D00
+
+// main-font-family: 'Oswald', sans-serif;
+// accent-font-family: 'Lato', sans-serif;
+
+.colors{
+	display: inline-block;
+}
+
+.color {
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	margin: 5px 0px;
+}
+
+#main-red-orange {
+	background-color: #DC3900;
+	text-align: center;
+	border: 1px solid black;
+}
+#accent-orange {
+	background-color: #E17D00;
+	text-align: center;
+	border: 1px solid black;
+}
+#accent-yellow {
+	background-color: #EBC62A;
+	text-align: center;
+	border: 1px solid black;
+}
+#accent-white {
+	background-color: #FCF9F0;
+	text-align: center;
+	border: 1px solid black;
+}
+#secondary-brown {
+	background-color: #2E2507;
+	color: #FCF9F0;
+	text-align: center;
+	border: 1px solid black;
+}
