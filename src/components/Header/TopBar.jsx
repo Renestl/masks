@@ -8,6 +8,7 @@ class TopBar extends Component {
 				<section id="logo" className="top-bar_logo">
 					<a href="/"><img src="http://via.placeholder.com/100x100" alt="Company Brand" />Millie's Masks</a>
 				</section>
+
 				{/* HEADER MENU */}
 				<section id="menu">
 					<ul className="level-1">
@@ -31,6 +32,25 @@ class TopBar extends Component {
 						</li>
 					</ul>
 				</section>
+
+				{/* HEADER CART */}
+				<div id="header_cart">
+					<a href="/cart">
+						<span className="icon">Cart icon</span>
+						<span id="cart_items">0</span>
+					</a>
+				</div>
+
+				{/* HEADER SEARCH */}
+				<div id="header_search">
+					<span className="icon"></span>
+					<form action="/search" method="GET" className="search_form">
+						<input type="text" id="search_field" placeholder={this.props.placeholder} />
+						<button id="search_submit">
+							<span className="icon">search glass icon</span>
+						</button>
+					</form>
+				</div>
 			</div>
 		)
 	}
