@@ -9,7 +9,7 @@ div {
 	display: flex;
 }
 
-#header_cart {
+.header_cart {
 	margin: 0 20px;
 }
 #header-search {
