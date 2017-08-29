@@ -1,0 +1,19 @@
+/* HEADER */
+div {
+	display: inline-block;
+}
+
+/* TOPBAR */
+.top-bar {
+	text-transform: uppercase;
+	display: flex;
+}
+
+#header_cart {
+	margin: 0 20px;
+}
+#header-search {
+	margin: 0 20px;
+}
+
+/* SHOWCASE */
