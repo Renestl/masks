@@ -1,0 +1,8 @@
+/* FEATURED */
+.featured {
+	width: 100%;
+}
+.featured_items {
+	display: flex;
+	justify-content: space-evenly;
+}
