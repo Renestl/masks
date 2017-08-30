@@ -9,11 +9,13 @@ div {
 	display: flex;
 }
 
-.header_cart {
-	margin: 0 20px;
-}
-#header-search {
-	margin: 0 20px;
+#menu li {
+	margin-left: 7px;
 }
 
-/* SHOWCASE */
+#header_cart {
+	margin: 0 20px;
+}
+#header_search {
+	margin: 0 20px;
+}
