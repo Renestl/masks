@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Header.css';
 
 import TopBar from './TopBar';
-import Showcase from './Showcase';
 
 class Header extends Component {
 	render() {
@@ -11,7 +10,6 @@ class Header extends Component {
 				<TopBar 
 					placeholder='Search store'
 				/>
-				<Showcase />
 			</div>
 		)
 	}
