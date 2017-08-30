@@ -19,3 +19,8 @@ div {
 #header_search {
 	margin: 0 20px;
 }
+
+/* JUMBOTRON */
+.jumbo {
+	display: flex;
+}
