@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Image } from 'react';
+import images from '../../../assets/Images';
 
 function ShowcaseItem(props) {
 	var classNames= `showcase_item showcase_item__color${props.color}`
@@ -8,13 +9,16 @@ function ShowcaseItem(props) {
 			<a href={props.link}>
 				<span className="btn">{props.itemName}</span>
 				<div className="showcase_item_image">
-					<img src="http://via.placeholder.com/369x230" alt={props.imgAlt} className="showcase_image" />
+					<img
+						src={images.blackMask.uri}
+						alt={images.blackMask.altText}
+					/>
 				</div>
 			</a>
 		</div>
 	)
 }
-
+// http://via.placeholder.com/369x230
 class Showcase extends Component {
 	render() {
 		return (
@@ -23,7 +27,6 @@ class Showcase extends Component {
 					color='1'
 					link='/Masks'
 					itemName="Masks"
-					imgAlt="Masks"
 				/>
 				<ShowcaseItem
 					color='2'

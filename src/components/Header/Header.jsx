@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import './Header.css';
 
 import TopBar from './TopBar';
+import images from '../../assets/Images';
 
 function Jumbotron() {
 	return (
 		<div className="jumbo">
 			<h2 className="title1">Masks as unique as you are.</h2>
 			<p></p>
-			<img src="http://via.placeholder.com/800x350" alt="Custom Header" />
+			<img src={images.boatMask.uri} alt={images.boatMask.altText}  />
 		</div>
 	)
 }

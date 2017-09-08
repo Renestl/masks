@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import images from '../../../assets/Images';
 
 function FeaturedItem(props) {
 	var classNames= `featured_item`
@@ -6,7 +7,7 @@ function FeaturedItem(props) {
 	return(
 		<div className={classNames}>
 			<a href={props.link}>
-				<img src="http://via.placeholder.com/275x230" alt={props.imgAlt} className="showcase_image" />
+				<img src={"http://via.placeholder.com/275x230"} alt={props.imgAlt} className="showcase_image" />
 				<p>{props.itemName}</p>
 				<h4>${props.price}</h4>
 				<button>Add To Cart</button>
