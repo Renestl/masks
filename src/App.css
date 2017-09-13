@@ -1,13 +1,4 @@
-
-
-/* MEDIA QUERIES */
-@media screen and (min-width: 900px) {
-	ul {
-		display: flex;
-		list-style-type: none;
-	}
-
-	li {
-		list-style-type: none;
-	}
+img {
+  height: 150px;
+  width: 150px;
 }

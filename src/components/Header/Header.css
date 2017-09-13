@@ -1,26 +1,21 @@
-/* HEADER */
-div {
-	display: inline-block;
+// TOPBAR
+.navbar {
+	min-height: 70px;
+}
+.navbar-brand {
+ padding-top: 5px;
+ padding-bottom: 0;
+}
+.navbar-brand img {
+	height: 45px;
 }
 
-/* TOPBAR */
-.top-bar {
+.navbar-right {
 	text-transform: uppercase;
-	display: flex;
 }
 
-#menu li {
-	margin-left: 7px;
-}
-
-#header_cart {
-	margin: 0 20px;
-}
-#header_search {
-	margin: 0 20px;
-}
-
-/* JUMBOTRON */
-.jumbo {
-	display: flex;
+@media (min-width:768px) and (max-width:991px) {
+	.navbar-right {
+		font-size: 12px;
+	}
 }
