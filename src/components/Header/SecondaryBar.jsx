@@ -1,24 +1,42 @@
 import React, { Component } from 'react';
+import {Col} from 'react-bootstrap';
 
 class SecondaryBar extends Component {
 	render() {
 		return (
 			<div className='secondarybar'>
-				{/* HEADER CART */}
-				<div id="header_cart">
-					<a href="/cart">
-						<span className="icon">Cart icon</span>
-						<span id="cart_items">0</span>
-					</a>
-				</div>
+				<Col xs={12} md={4} mdOffset={8}>
+					{/* HEADER CART */}
+					<div id="header_cart">
+						<a href="/cart" aria-label="View shopping cart">
+							<span 
+								className="icon fa fa-shopping-cart fa-2x fa-fw" aria-hidden="true"
+							>
+								<span id="cart_items">0</span>
+							</span>
+						</a>
+					</div>
+				</Col>
+				
 
 				{/* HEADER SEARCH */}
 				<div id="header_search">
-					<span className="icon"></span>
-					<form action="/search" method="GET" className="search_form">
-						<input type="text" id="search_field" placeholder={this.props.placeholder} />
-						<button id="search_submit">
-							<span className="icon">search glass icon</span>
+					<span 
+						className="icon fa fa-search fa-2x fa-fw" aria-hidden="true"
+						aria-label="Search">
+					</span>
+
+					<form 
+						action="/search" 
+						method="GET" 
+						className="search_form"
+					>
+						<input type="text" id="search_field" placeholder="Search store" />
+						<button id="search_submit" type="submit" >
+							<span 
+								className="icon fa fa-search fa-2x fa-fw" aria-hidden="true"
+								aria-label="Search">
+							</span>
 						</button>
 					</form>
 				</div>
