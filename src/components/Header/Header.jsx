@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Header.css';
 
 import TopBar from './TopBar';
+import SecondaryBar from './SecondaryBar';
 import images from '../../assets/Images';
 
 function Jumbotron() {
@@ -21,6 +22,7 @@ class Header extends Component {
 				<TopBar 
 					placeholder='Search store'
 				/>
+				<SecondaryBar />
 				<Jumbotron />
 			</div>
 		)
