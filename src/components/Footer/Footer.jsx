@@ -33,6 +33,21 @@ const myAccountItems = myAccount.map((accountItem) =>
 	</MenuItem>
 );
 
+const contact = [
+	{href: '/Contact', name:'Contact'},
+	{href: '/AboutUs', name:'About Us'},
+	{href: '/TBD', name:'TBD'},
+];
+
+const contactItems = contact.map((contactItem) =>
+	<MenuItem
+		key={contactItem.name}	
+		href={contactItem.href}
+	>
+		{contactItem.name}
+	</MenuItem>
+);
+
 
 // FUNCTIONS
 function FootNav (props, children) {
@@ -73,7 +88,7 @@ class Footer extends Component {
 					<Col xs={12} sm={6} lg={3}>
 						<FootNav 
 							columnHeader='Contact Us'
-						>
+						> {contactItems}
 						</FootNav>
 					</Col>
 				</Row>
