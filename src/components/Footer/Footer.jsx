@@ -1,38 +1,6 @@
 import React, { Component } from 'react';
 import { Grid,Col, Row, MenuItem } from 'react-bootstrap';
-
-// DATA
-const catalogDropdown = [
-	{href:'/masks', name: 'Masks'},
-	{href:'/plates', name: 'Plates'},
-	{href:'/cups', name: 'Cups'},
-	{href:'/other', name: 'Other'}
-];
-
-const catalogItems = catalogDropdown.map((catalogItem) => 
-	<MenuItem 
-		key={catalogItem.name} 
-		href={catalogItem.href}
-	>
-		{catalogItem.name}
-	</MenuItem>
-);
-
-const myAccount = [
-	{href:'/myAccount', name: 'My Account'},
-	{href:'/myAddresses', name: 'My Addresses'},
-	{href:'/myCart', name: 'My Cart'}
-];
-
-const myAccountItems = myAccount.map((accountItem) =>
-	<MenuItem
-		key={accountItem.name}
-		href={accountItem.href}
-	>
-		{accountItem.name}
-	</MenuItem>
-);
-
+import {catalogDropdown, catalogItems, myAccount, myAccountItems } from '../../data/DummyData';
 
 // FUNCTIONS
 function FootNav (props, children) {
