@@ -99,7 +99,7 @@ export const products = [
 export const FeaturedItems = products.map(function(featureItem) {
 	if(featureItem.featured === true) {
 		return (
-			<FeaturedItems
+			<li
 				key={featureItem.itemName}
 				href={featureItem.imgSrc}
 				itemName={featureItem.itemName}
