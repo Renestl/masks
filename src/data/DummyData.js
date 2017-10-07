@@ -59,6 +59,7 @@ export const products = [
 		imgAlt: 'New Mask',
 		itemName: "New Blue Mask",
 		price: "50.00",
+		productType: "mask",
 		featured: true
 	},
 	{
@@ -66,6 +67,7 @@ export const products = [
 		imgAlt: 'New Mask ',
 		itemName: "New Black Mask",
 		price: "150.00",
+		productType: "mask",
 		featured: true
 	},
 	{
@@ -73,6 +75,7 @@ export const products = [
 		imgAlt: 'New Plate',
 		itemName: "New Blue Plate",
 		price: "25.00",
+		productType: "plate",
 		featured: true
 	},
 	{
@@ -80,6 +83,7 @@ export const products = [
 		imgAlt: 'New Cup',
 		itemName: "New Blue Cup",
 		price: "20.00",
+		productType: "cup",
 		featured: true
 	},
 	{
@@ -87,6 +91,7 @@ export const products = [
 		imgAlt: "Random Cup",
 		itemName: "Random Red Cup",
 		price: "15.00",
+		productType: "cup",
 		featured: false
 	}
 ]
