@@ -76,3 +76,61 @@ export const contactItems = contactUs.map((contactItem) =>
 		{contactItem.name}
 	</MenuItem>
 )
+// PRODUCTS FOR FEATURED AND CATALOG
+
+export const products = [
+	{
+		imgsrc: "http://via.placeholder.com/275x230",
+		imgAlt: 'New Mask',
+		itemName: "New Blue Mask",
+		price: "50.00",
+		productType: "mask",
+		featured: true
+	},
+	{
+		imgsrc: "http://via.placeholder.com/275x230",
+		imgAlt: 'New Mask ',
+		itemName: "New Black Mask",
+		price: "150.00",
+		productType: "mask",
+		featured: true
+	},
+	{
+		imgsrc: "http://via.placeholder.com/275x230",
+		imgAlt: 'New Plate',
+		itemName: "New Blue Plate",
+		price: "25.00",
+		productType: "plate",
+		featured: true
+	},
+	{
+		imgsrc: "http://via.placeholder.com/275x230",
+		imgAlt: 'New Cup',
+		itemName: "New Blue Cup",
+		price: "20.00",
+		productType: "cup",
+		featured: true
+	},
+	{
+		imgsrc:"http://via.placeholder.com/275x230",
+		imgAlt: "Random Cup",
+		itemName: "Random Red Cup",
+		price: "15.00",
+		productType: "cup",
+		featured: false
+	}
+]
+
+export const FeaturedItems = products.map(function(featureItem) {
+	if(featureItem.featured === true) {
+		return (
+			<li
+				key={featureItem.itemName}
+				href={featureItem.imgSrc}
+				itemName={featureItem.itemName}
+				alt={featureItem.imgAlt}
+				price={featureItem.price}
+			/>
+		)
+	}
+});
