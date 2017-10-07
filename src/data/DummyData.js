@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 import { MenuItem } from 'react-bootstrap';
 
+// function LinkItems() {
+// 	return(
+// 		<MenuItem 
+// 		key={} 
+// 		href={catalogItem.href}
+// 	>
+// 		{catalogItem.name}
+// 	</MenuItem>
+// 	)
+// }
+
 // HEADER, FOOTER
 export const catalogDropdown = [
 	{href:'/masks', name: 'Masks'},
@@ -51,6 +62,20 @@ export const myAccountItems = myAccount.map((accountItem) =>
 	</MenuItem>
 );
 
+export const contactUs = [
+	{href:'/ContactUs', name: 'Contact Us'},
+	{href:'/TBD', name: 'TBD'},
+	{href:'/TBD', name: 'TBD'},
+];
+
+export const contactItems = contactUs.map((contactItem) =>
+	<MenuItem
+		key={contactItem.name}
+		href={contactItem.href}
+	>
+		{contactItem.name}
+	</MenuItem>
+)
 // PRODUCTS FOR FEATURED AND CATALOG
 
 export const products = [
