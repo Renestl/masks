@@ -95,3 +95,17 @@ export const products = [
 		featured: false
 	}
 ]
+
+export const FeaturedItems = FeaturedList.map(function(featureItem) {
+	if(featureItem.featured === true) {
+		return (
+			<FeaturedItems
+				key={featureItem.itemName}
+				href={featureItem.imgSrc}
+				itemName={featureItem.itemName}
+				alt={featureItem.imgAlt}
+				price={featureItem.price}
+			/>
+		)
+	}
+});
