@@ -57,29 +57,29 @@ export const products = [
 	{
 		imgsrc: "http://via.placeholder.com/275x230",
 		imgAlt: 'New Mask',
-		itemName="New Blue Mask",
-		price="50.00",
+		itemName: "New Blue Mask",
+		price: "50.00",
 		featured: true
 	},
 	{
 		imgsrc: "http://via.placeholder.com/275x230",
 		imgAlt: 'New Mask ',
-		itemName="New Black Mask",
-		price="150.00",
+		itemName: "New Black Mask",
+		price: "150.00",
 		featured: true
 	},
 	{
 		imgsrc: "http://via.placeholder.com/275x230",
 		imgAlt: 'New Plate',
-		itemName="New Blue Plate",
-		price="25.00",
+		itemName: "New Blue Plate",
+		price: "25.00",
 		featured: true
 	},
 	{
 		imgsrc: "http://via.placeholder.com/275x230",
 		imgAlt: 'New Cup',
-		itemName="New Blue Cup",
-		price="20.00",
+		itemName: "New Blue Cup",
+		price: "20.00",
 		featured: true
 	},
 	{
