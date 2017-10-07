@@ -96,7 +96,7 @@ export const products = [
 	}
 ]
 
-export const FeaturedItems = FeaturedList.map(function(featureItem) {
+export const FeaturedItems = products.map(function(featureItem) {
 	if(featureItem.featured === true) {
 		return (
 			<FeaturedItems
