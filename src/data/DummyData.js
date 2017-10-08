@@ -1,17 +1,6 @@
 import React, { Component } from 'react';
 import { MenuItem } from 'react-bootstrap';
 
-// function LinkItems() {
-// 	return(
-// 		<MenuItem 
-// 		key={} 
-// 		href={catalogItem.href}
-// 	>
-// 		{catalogItem.name}
-// 	</MenuItem>
-// 	)
-// }
-
 // HEADER, FOOTER
 export const catalogDropdown = [
 	{href:'/masks', name: 'Masks'},
@@ -19,15 +8,6 @@ export const catalogDropdown = [
 	{href:'/cups', name: 'Cups'},
 	{href:'/other', name: 'Other'}
 ];
-
-export const catalogItems = catalogDropdown.map((catalogItem) => 
-	<MenuItem 
-		key={catalogItem.name} 
-		href={catalogItem.href}
-	>
-		{catalogItem.name}
-	</MenuItem>
-);
 
 // HEADER
 export const blogDropdown = [
@@ -37,15 +17,6 @@ export const blogDropdown = [
 	{href:'/post4', name: 'Post4'}
 ];
 
-export const blogItems = blogDropdown.map((blogItem) => 
-<MenuItem 
-	key={blogItem.name} 
-	href={blogItem.href}
->
-	{blogItem.name}
-</MenuItem>
-);
-
 // FOOTER
 export const myAccount = [
 	{href:'/myAccount', name: 'My Account'},
@@ -53,29 +24,12 @@ export const myAccount = [
 	{href:'/myCart', name: 'My Cart'}
 ];
 
-export const myAccountItems = myAccount.map((accountItem) =>
-	<MenuItem
-		key={accountItem.name}
-		href={accountItem.href}
-	>
-		{accountItem.name}
-	</MenuItem>
-);
-
 export const contactUs = [
 	{href:'/ContactUs', name: 'Contact Us'},
 	{href:'/TBD', name: 'TBD'},
 	{href:'/TBD', name: 'TBD'},
 ];
 
-export const contactItems = contactUs.map((contactItem) =>
-	<MenuItem
-		key={contactItem.name}
-		href={contactItem.href}
-	>
-		{contactItem.name}
-	</MenuItem>
-)
 // PRODUCTS FOR FEATURED AND CATALOG
 
 export const products = [
@@ -120,17 +74,3 @@ export const products = [
 		featured: false
 	}
 ]
-
-export const FeaturedItems = products.map(function(featureItem) {
-	if(featureItem.featured === true) {
-		return (
-			<li
-				key={featureItem.itemName}
-				href={featureItem.imgSrc}
-				itemName={featureItem.itemName}
-				alt={featureItem.imgAlt}
-				price={featureItem.price}
-			/>
-		)
-	}
-});
