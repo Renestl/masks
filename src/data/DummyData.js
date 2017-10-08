@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { MenuItem } from 'react-bootstrap';
 
 // HEADER, FOOTER
@@ -31,11 +31,17 @@ export const myAccount = [
 	{href:'/myCart', name: 'My Cart'}
 ];
 
-export const contactUs = [
-	{href:'/ContactUs', name: 'Contact Us'},
-	{href:'/TBD', name: 'TBD'},
-	{href:'/TBD', name: 'TBD'},
-];
+// export const contactUs = [
+// 	{
+// 		address1:"1234 This Road",
+// 		address2: "",
+// 		city: "Saint Louis",
+// 		state: "MO",
+// 		zipcode: "63101",
+// 		phone: "1-987-654-3210",
+// 		email: "compEmail@gmail.com"
+// 	},
+// ];
 
 // PRODUCTS FOR FEATURED AND CATALOG
 
