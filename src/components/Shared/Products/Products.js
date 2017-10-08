@@ -3,6 +3,16 @@ import { Grid, Row, Col, Thumbnail, Button } from 'react-bootstrap';
 
 import { products } from '../../../data/DummyData';
 
+export const thumbnailInstance = (
+	<Thumbnail src={"http://via.placeholder.com/275x230"} alt="{products.imgAlt}">
+		<h3>{products.itemName}</h3>
+		<p>${products.price}</p>
+		<p>
+			<Button bsStyle="primary">Add To Cart</Button>
+		</p>
+	</Thumbnail>
+)
+
 // FEATURED ITEMS
 export const featuredItems = products.map(function(featureItem) {
 	if(featureItem.featured === true) {
