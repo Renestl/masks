@@ -18,6 +18,13 @@ export const blogDropdown = [
 ];
 
 // FOOTER
+export const information = [
+	{href:'', name: 'Search'},
+	{href:'', name: 'About Us'},
+	{href:'', name: 'Home'},
+	{href:'', name: 'Blog'},
+]
+
 export const myAccount = [
 	{href:'/myAccount', name: 'My Account'},
 	{href:'/myAddresses', name: 'My Addresses'},
