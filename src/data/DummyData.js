@@ -100,5 +100,32 @@ export const products = [
 		price: "15.00",
 		productType: "cup",
 		featured: false
+	},
+	{
+		objectId: 5,
+		imgsrc: "http://via.placeholder.com/275x230",
+		imgAlt: 'New Plate',
+		itemName: "New Blue Plate",
+		price: "25.00",
+		productType: "plate",
+		featured: false
+	},
+	{
+		objectId: 6,
+		imgsrc: "http://via.placeholder.com/275x230",
+		imgAlt: 'New Cup',
+		itemName: "New Blue Cup",
+		price: "20.00",
+		productType: "cup",
+		featured: false
+	},
+	{
+		objectId: 7,
+		imgsrc:"http://via.placeholder.com/275x230",
+		imgAlt: "Random Cup",
+		itemName: "Random Red Cup",
+		price: "15.00",
+		productType: "cup",
+		featured: false
 	}
 ]
