@@ -27,3 +27,11 @@ export const featuredItems = products.map(function(featureItem) {
 		)
 	}
 });
+
+export const productList = products.map(function(productItem) {
+	return (
+		<Col xs={6} md={4} key={productItem.objectId}>
+			{thumbnailInstance}
+		</Col>
+	)
+});
