@@ -43,6 +43,16 @@ export const myAccount = [
 // 	},
 // ];
 
+export const socialMedia = [
+	{
+		twitter: "",
+		facebook: "",
+		youtube: "",
+		pinterest: "",
+		googlePlus: "",
+	}
+]
+
 // PRODUCTS FOR FEATURED AND CATALOG
 
 export const products = [
