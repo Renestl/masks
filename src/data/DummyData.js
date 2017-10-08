@@ -57,6 +57,7 @@ export const socialMedia = [
 
 export const products = [
 	{
+		objectId: 0,
 		imgsrc: "http://via.placeholder.com/275x230",
 		imgAlt: 'New Mask',
 		itemName: "New Blue Mask",
@@ -65,6 +66,7 @@ export const products = [
 		featured: true
 	},
 	{
+		objectId: 1,
 		imgsrc: "http://via.placeholder.com/275x230",
 		imgAlt: 'New Mask ',
 		itemName: "New Black Mask",
@@ -73,6 +75,7 @@ export const products = [
 		featured: true
 	},
 	{
+		objectId: 2,
 		imgsrc: "http://via.placeholder.com/275x230",
 		imgAlt: 'New Plate',
 		itemName: "New Blue Plate",
@@ -81,6 +84,7 @@ export const products = [
 		featured: true
 	},
 	{
+		objectId: 3,
 		imgsrc: "http://via.placeholder.com/275x230",
 		imgAlt: 'New Cup',
 		itemName: "New Blue Cup",
@@ -89,6 +93,7 @@ export const products = [
 		featured: true
 	},
 	{
+		objectId: 4,
 		imgsrc:"http://via.placeholder.com/275x230",
 		imgAlt: "Random Cup",
 		itemName: "Random Red Cup",
