@@ -43,7 +43,11 @@ class Footer extends Component {
 					<Col xs={12} sm={6} lg={3}>
 						<FootNav 
 							columnHeader='Contact Us'
-						> {contactItems}
+						> 
+							1234 This Road
+							Saint Louis, MO 63101
+							1-987-654-3210
+							compEmail@gmail.com
 						</FootNav>
 					</Col>
 				</Row>
