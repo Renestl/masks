@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import {Grid } from 'react-bootstrap';
 
-class Products extends Component {
+class Catalog extends Component {
 	render() {
 		return (
 			<Grid>
-				Products
+				Catalog
 			</Grid>
 		)
 	}
 }
 
-export default Products;
+export default Catalog;
