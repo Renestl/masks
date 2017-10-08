@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Grid,Col, Row, MenuItem } from 'react-bootstrap';
-import {catalogDropdown, catalogItems, myAccount, myAccountItems } from '../../data/DummyData';
+
+import {catalogDropdown, myAccount } from '../../data/DummyData';
+import { catalogItems, myAccountItems, contactItems } from "../Shared/Navigation/Navigation";
 
 // FUNCTIONS
 function FootNav (props, children) {
