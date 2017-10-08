@@ -32,13 +32,3 @@ export const myAccountItems = myAccount.map((accountItem) =>
 		{accountItem.name}
 	</MenuItem>
 );
-
-// FOOTER CONTACT
-export const contactItems = contactUs.map((contactItem) =>
-	<MenuItem
-		key={contactItem.name}
-		href={contactItem.href}
-	>
-		{contactItem.name}
-	</MenuItem>
-)
