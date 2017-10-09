@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid,Col, Row } from 'react-bootstrap';
 
-import { catalogItems, myAccountItems } from "../Shared/Navigation/Navigation";
+import { catalogItems, myAccountItems, infoItems } from "../Shared/Navigation/Navigation";
 
 // FUNCTIONS
 function FootNav (props, children) {
@@ -22,6 +22,7 @@ class Footer extends Component {
 						<FootNav 
 							columnHeader='Information'
 						>
+						{infoItems}
 						</FootNav>
 					</Col>
 
@@ -48,6 +49,16 @@ class Footer extends Component {
 							1-987-654-3210
 							compEmail@gmail.com
 						</FootNav>
+					</Col>
+				</Row>
+				<Row className="socialMedia">
+					<Col xs={12}>
+						FB, Tweet, IG, G+ icons go here
+					</Col>
+				</Row>
+				<Row className="copyright">
+					<Col xs={12}>
+						&copy; 2017 Millie's Masks. All Rights Reserved.
 					</Col>
 				</Row>
 			</Grid>

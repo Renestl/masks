@@ -1,7 +1,7 @@
 import React from 'react';
 import { MenuItem } from 'react-bootstrap';
 
-import {catalogDropdown, myAccount, blogDropdown } from '../../../data/DummyData';
+import {catalogDropdown, myAccount, blogDropdown, information } from '../../../data/DummyData';
 
 // HEADER, FOOTER
 export const catalogItems = catalogDropdown.map((catalogItem) => 
@@ -24,6 +24,15 @@ export const blogItems = blogDropdown.map((blogItem) =>
 );
 
 // FOOTER
+export const infoItems = information.map((infoItem) =>
+	<MenuItem
+		key={infoItem.name}
+		href={infoItem.href}
+	>
+		{infoItem.name}
+	</MenuItem>
+);
+
 export const myAccountItems = myAccount.map((accountItem) =>
 	<MenuItem
 		key={accountItem.name}
