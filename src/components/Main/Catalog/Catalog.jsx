@@ -13,11 +13,11 @@ class Catalog extends Component {
 						<Row className="product-sort">
 							<Col sm={12}>
 								<ul>
-									<li><a href=""></a>All</li>
-									<li><a href=""></a>Masks</li>
-									<li><a href=""></a>Plates</li>
-									<li><a href=""></a>Cups</li>
-									<li><a href=""></a>Other</li>
+									<li><a href="/All">All</a></li>
+									<li><a href="/Masks">Masks</a></li>
+									<li><a href="/Plates">Plates</a></li>
+									<li><a href="/Cups">Cups</a></li>
+									<li><a href="/Other">Other</a></li>
 								</ul>
 							</Col>
 						</Row>
