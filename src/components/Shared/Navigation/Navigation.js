@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { MenuItem } from 'react-bootstrap';
 
-import {catalogDropdown, myAccount, blogDropdown, contactUs } from '../../../data/DummyData';
+import {catalogDropdown, myAccount, blogDropdown } from '../../../data/DummyData';
 
 // HEADER, FOOTER
 export const catalogItems = catalogDropdown.map((catalogItem) => 

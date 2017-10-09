@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Grid, Row, Col, Thumbnail, Button } from 'react-bootstrap';
+import React from 'react';
+import { Col, Thumbnail, Button } from 'react-bootstrap';
 
 import { products } from '../../../data/DummyData';
 

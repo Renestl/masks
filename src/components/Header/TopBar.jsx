@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
+import {Navbar, Nav, NavItem, NavDropdown } from 'react-bootstrap';
 
-import { catalogDropDown, blogDropdown } from '../../data/DummyData';
 import { catalogItems, blogItems } from "../Shared/Navigation/Navigation";
 
 import images from '../../assets/Images';
