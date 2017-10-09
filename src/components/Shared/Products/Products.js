@@ -45,7 +45,13 @@ export const featuredItems = products.map(function(featureItem) {
 export const productList = products.map(function(productItem) {
 	return (
 		<Col xs={6} md={4} key={productItem.objectId}>
-			{thumbnailInstance}
+			<Thumbnail src={productItem.imgsrc} alt={productItem.imgAlt}>
+				<h3>{productItem.itemName}</h3>
+				<p>${productItem.price}</p>
+				<p>
+					<Button bsStyle="primary">Add To Cart</Button>
+				</p>
+			</Thumbnail>
 		</Col>
 	)
 });
