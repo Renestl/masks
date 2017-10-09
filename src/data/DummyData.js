@@ -1,5 +1,5 @@
-import React from 'react';
 import { MenuItem } from 'react-bootstrap';
+import images from '../assets/Images';
 
 // HEADER, FOOTER
 export const catalogDropdown = [
@@ -31,18 +31,6 @@ export const myAccount = [
 	{href:'/myCart', name: 'My Cart'}
 ];
 
-// export const contactUs = [
-// 	{
-// 		address1:"1234 This Road",
-// 		address2: "",
-// 		city: "Saint Louis",
-// 		state: "MO",
-// 		zipcode: "63101",
-// 		phone: "1-987-654-3210",
-// 		email: "compEmail@gmail.com"
-// 	},
-// ];
-
 export const socialMedia = [
 	{
 		twitter: "",
@@ -58,72 +46,72 @@ export const socialMedia = [
 export const products = [
 	{
 		objectId: 0,
-		imgsrc: "http://via.placeholder.com/275x230",
-		imgAlt: 'New Mask',
-		itemName: "New Blue Mask",
+		imgsrc: images.deadpool.uri,
+		imgAlt: images.deadpool.altText,
+		itemName: images.deadpool.imgName,
 		price: "50.00",
 		productType: "mask",
 		featured: true
 	},
 	{
 		objectId: 1,
-		imgsrc: "http://via.placeholder.com/275x230",
-		imgAlt: 'New Mask ',
-		itemName: "New Black Mask",
+		imgsrc: images.egypt.uri,
+		imgAlt: images.egypt.altText,
+		itemName: images.egypt.imgName,
 		price: "150.00",
 		productType: "mask",
 		featured: true
 	},
 	{
 		objectId: 2,
-		imgsrc: "http://via.placeholder.com/275x230",
-		imgAlt: 'New Plate',
-		itemName: "New Blue Plate",
+		imgsrc: images.hero.uri,
+		imgAlt: images.hero.altText,
+		itemName: images.hero.imgName,
 		price: "25.00",
 		productType: "plate",
 		featured: true
 	},
 	{
 		objectId: 3,
-		imgsrc: "http://via.placeholder.com/275x230",
-		imgAlt: 'New Cup',
-		itemName: "New Blue Cup",
+		imgsrc: images.totumPole.uri,
+		imgAlt: images.totumPole.altText,
+		itemName: images.totumPole.imgName,
 		price: "20.00",
 		productType: "cup",
 		featured: true
 	},
 	{
 		objectId: 4,
-		imgsrc:"http://via.placeholder.com/275x230",
-		imgAlt: "Random Cup",
-		itemName: "Random Red Cup",
+		imgsrc:images.volto.uri,
+		imgAlt: images.volto.altText,
+		itemName: images.volto.imgName,
 		price: "15.00",
 		productType: "cup",
 		featured: false
 	},
 	{
 		objectId: 5,
-		imgsrc: "http://via.placeholder.com/275x230",
-		imgAlt: 'New Plate',
-		itemName: "New Blue Plate",
+		imgsrc: images.clown.uri,
+		imgAlt: images.clown.altText,
+		itemName: images.clown.imgName,
 		price: "25.00",
 		productType: "plate",
 		featured: false
 	},
 	{
 		objectId: 6,
-		imgsrc: "http://via.placeholder.com/275x230",
-		imgAlt: 'New Cup',
-		itemName: "New Blue Cup",
+		imgsrc: images.blackMask.uri,
+		imgAlt: images.blackMask.altText,
+		itemName: images.blackMask.imgName,
 		price: "20.00",
 		productType: "cup",
 		featured: false
 	},
 	{
 		objectId: 7,
-		imgsrc:"http://via.placeholder.com/275x230",
-		imgAlt: "Random Cup",
-		itemName: "Random Red Cup",
+		imgsrc:images.boatMask.uri,
+		imgAlt: images.boatMask.altText,
+		itemName: images.boatMask.imgName,
 		price: "15.00",
 		productType: "cup",
 		featured: false
