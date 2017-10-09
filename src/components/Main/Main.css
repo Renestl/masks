@@ -6,3 +6,10 @@
 	// display: flex;
 	// justify-content: space-evenly;
 }
+
+.section_header {
+	text-align: center;
+}
+.blog_title {
+	font-weight: bold;
+}
