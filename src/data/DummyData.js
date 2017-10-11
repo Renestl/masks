@@ -3,6 +3,7 @@ import images from '../assets/Images';
 
 // HEADER, FOOTER
 export const catalogDropdown = [
+	{href:'/catalog', name: 'All'},
 	{href:'/masks', name: 'Masks'},
 	{href:'/plates', name: 'Plates'},
 	{href:'/cups', name: 'Cups'},
