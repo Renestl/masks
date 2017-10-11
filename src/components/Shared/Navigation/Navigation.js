@@ -1,5 +1,6 @@
 import React from 'react';
 import { MenuItem } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import {catalogDropdown, myAccount, blogDropdown, information } from '../../../data/DummyData';
 
@@ -9,7 +10,9 @@ export const catalogItems = catalogDropdown.map((catalogItem) =>
 		key={catalogItem.name} 
 		href={catalogItem.href}
 	>
-		{catalogItem.name}
+		<Link to={catalogItem.href}>
+			{catalogItem.name}
+		</Link>		
 	</MenuItem>
 );
 
