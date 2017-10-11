@@ -6,6 +6,8 @@ import './Main.css';
 import FrontPage from './FrontPage/FrontPage';
 import Blog from './Blog/Blog';
 import Catalog from './Catalog/Catalog';
+import Contact from './Contact/Contact';
+import Account from './Account/Account';
 
 class Main extends Component {
 	render() {
