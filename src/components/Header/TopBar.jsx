@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Navbar, Nav, NavItem, NavDropdown } from 'react-bootstrap';
+import { NavLink, Link } from 'react-router-dom';
 
 import { catalogItems, blogItems } from "../Shared/Navigation";
 
@@ -12,22 +13,24 @@ class TopBar extends Component {
 				<Navbar inverse collapseOnSelect fixedTop fluid>
 					<Navbar.Header>
 						<Navbar.Brand>
-							<a href="/">
+							<NavLink to="/">
 								<img src={images.logoWhite.uri} alt={images.logoWhite.altText} />
-							</a>
+							</NavLink>
 						</Navbar.Brand>
 						<Navbar.Toggle />
 					</Navbar.Header>
 					
 					<Navbar.Collapse>
 						<Nav pullRight>
-							<NavItem href="/" className="level-1_item_link">home</NavItem>
+							<NavItem className="level-1_item_link">
+								<Link to="/">home</Link>
+							</NavItem>
 							<NavDropdown 
 								title="Catalog" 
 								className="level-1_item_link"
 								id="nav-catalog-dropdown"
 							>
-								{catalogItems}						
+									{catalogItems}				
 							</NavDropdown>
 								
 							<NavDropdown 
