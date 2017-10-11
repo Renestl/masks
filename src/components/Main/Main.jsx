@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom'
+
 import './Main.css';
 
 import FrontPage from './FrontPage/FrontPage';
@@ -9,9 +11,12 @@ class Main extends Component {
 	render() {
 		return (
 			<div className="main">
-				<FrontPage />
-				<Blog/>
-				<Catalog />
+				<Switch>
+
+					<Route exact path='/' component={FrontPage}/>
+					<Route path='/blog' component={Blog}/>
+					<Route path='/catalog' component={Catalog}/>
+				</Switch>
 			</div>
 		)
 	}
