@@ -22,7 +22,9 @@ export const blogItems = blogDropdown.map((blogItem) =>
 	key={blogItem.name} 
 	href={blogItem.href}
 >
-	{blogItem.name}
+	<Link to={blogItem.href}>
+		{blogItem.name}
+	</Link>
 </MenuItem>
 );
 
