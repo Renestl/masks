@@ -34,6 +34,7 @@ class Account extends Component {
 							<input type="text" id="phone_field" placeholder="Password" />
 
 							<button id="login_submit" type="submit">Sign In</button>
+							<a href="/forgot-password">Forgot your password?</a>
 						</form>
 					</Col>
 				</Row>
