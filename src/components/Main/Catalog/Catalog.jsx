@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Col, Row } from 'react-bootstrap';
 
-import { productList } from "../../Shared/Products/Products";
+import { productList } from "../../Shared/Products";
 
 class Catalog extends Component {
 	render() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Thumbnail, Button } from 'react-bootstrap';
 
-import { products } from '../../../data/DummyData';
+import { products } from '../../data/DummyData';
 
 // export const thumbnailInstance = (
 // 	<Thumbnail src={productItem.imgsrc} alt={products.imgAlt}>

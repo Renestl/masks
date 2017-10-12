@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid,Col, Row } from 'react-bootstrap';
 
-import { catalogItems, myAccountItems, infoItems } from "../Shared/Navigation/Navigation";
+import { catalogItems, myAccountItems, infoItems } from "../Shared/Navigation";
 
 // FUNCTIONS
 function FootNav (props, children) {
