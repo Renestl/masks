@@ -13,7 +13,13 @@ class Account extends Component {
 				
 				<Row>
 					<Col sm={12} md={6}>
-						New here?
+							<p>New here?</p>
+							<p>Registration is free and easy!</p>
+							<ul>
+								<li><span></span>Faster Checkout</li>
+								<li><span></span>Save Multiple Shipping Addresses</li>
+								<li><span></span>View and Track Orders and more</li>
+							</ul>
 						<button id="create_submit" type="submit">Create An Account</button>
 					</Col>
 
