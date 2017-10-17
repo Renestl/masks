@@ -1,4 +1,4 @@
-import React, { Component, Image } from 'react';
+import React, { Component } from 'react';
 import images from '../../../assets/Images';
 
 function ShowcaseItem(props) {
@@ -10,7 +10,7 @@ function ShowcaseItem(props) {
 				<span className="btn">{props.itemName}</span>
 				<div className="showcase_item_image">
 					<img
-						src={images.blackMask.uri}
+						src="http://via.placeholder.com/275x230"
 						alt={images.blackMask.altText}
 					/>
 				</div>

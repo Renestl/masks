@@ -20,7 +20,7 @@ class Featured extends Component {
 	render() {
 		return (
 			<div className="featured">
-				<h2>Featured Products</h2>
+				<h3>Featured Products</h3>
 				<div className="featured_items">
 					<FeaturedItem
 						imgAlt='New Mask'

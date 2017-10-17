@@ -1,16 +1,5 @@
-import React, { Component } from 'react';
 import { MenuItem } from 'react-bootstrap';
-
-// function LinkItems() {
-// 	return(
-// 		<MenuItem 
-// 		key={} 
-// 		href={catalogItem.href}
-// 	>
-// 		{catalogItem.name}
-// 	</MenuItem>
-// 	)
-// }
+import images from '../assets/Images';
 
 // HEADER, FOOTER
 export const catalogDropdown = [
@@ -20,15 +9,6 @@ export const catalogDropdown = [
 	{href:'/other', name: 'Other'}
 ];
 
-export const catalogItems = catalogDropdown.map((catalogItem) => 
-	<MenuItem 
-		key={catalogItem.name} 
-		href={catalogItem.href}
-	>
-		{catalogItem.name}
-	</MenuItem>
-);
-
 // HEADER
 export const blogDropdown = [
 	{href:'/post1', name: 'Post1'},
@@ -37,100 +17,103 @@ export const blogDropdown = [
 	{href:'/post4', name: 'Post4'}
 ];
 
-export const blogItems = blogDropdown.map((blogItem) => 
-<MenuItem 
-	key={blogItem.name} 
-	href={blogItem.href}
->
-	{blogItem.name}
-</MenuItem>
-);
-
 // FOOTER
+export const information = [
+	{href:'', name: 'Search'},
+	{href:'', name: 'About Us'},
+	{href:'', name: 'Home'},
+	{href:'', name: 'Blog'},
+]
+
 export const myAccount = [
 	{href:'/myAccount', name: 'My Account'},
 	{href:'/myAddresses', name: 'My Addresses'},
 	{href:'/myCart', name: 'My Cart'}
 ];
 
-export const myAccountItems = myAccount.map((accountItem) =>
-	<MenuItem
-		key={accountItem.name}
-		href={accountItem.href}
-	>
-		{accountItem.name}
-	</MenuItem>
-);
+export const socialMedia = [
+	{
+		twitter: "",
+		facebook: "",
+		youtube: "",
+		pinterest: "",
+		googlePlus: "",
+	}
+]
 
-export const contactUs = [
-	{href:'/ContactUs', name: 'Contact Us'},
-	{href:'/TBD', name: 'TBD'},
-	{href:'/TBD', name: 'TBD'},
-];
-
-export const contactItems = contactUs.map((contactItem) =>
-	<MenuItem
-		key={contactItem.name}
-		href={contactItem.href}
-	>
-		{contactItem.name}
-	</MenuItem>
-)
 // PRODUCTS FOR FEATURED AND CATALOG
 
 export const products = [
 	{
-		imgsrc: "http://via.placeholder.com/275x230",
-		imgAlt: 'New Mask',
-		itemName: "New Blue Mask",
+		objectId: 0,
+		imgsrc: images.deadpool.uri,
+		imgAlt: images.deadpool.altText,
+		itemName: images.deadpool.imgName,
 		price: "50.00",
 		productType: "mask",
 		featured: true
 	},
 	{
-		imgsrc: "http://via.placeholder.com/275x230",
-		imgAlt: 'New Mask ',
-		itemName: "New Black Mask",
+		objectId: 1,
+		imgsrc: images.egypt.uri,
+		imgAlt: images.egypt.altText,
+		itemName: images.egypt.imgName,
 		price: "150.00",
 		productType: "mask",
 		featured: true
 	},
 	{
-		imgsrc: "http://via.placeholder.com/275x230",
-		imgAlt: 'New Plate',
-		itemName: "New Blue Plate",
+		objectId: 2,
+		imgsrc: images.hero.uri,
+		imgAlt: images.hero.altText,
+		itemName: images.hero.imgName,
 		price: "25.00",
 		productType: "plate",
 		featured: true
 	},
 	{
-		imgsrc: "http://via.placeholder.com/275x230",
-		imgAlt: 'New Cup',
-		itemName: "New Blue Cup",
+		objectId: 3,
+		imgsrc: images.totumPole.uri,
+		imgAlt: images.totumPole.altText,
+		itemName: images.totumPole.imgName,
 		price: "20.00",
 		productType: "cup",
 		featured: true
 	},
 	{
-		imgsrc:"http://via.placeholder.com/275x230",
-		imgAlt: "Random Cup",
-		itemName: "Random Red Cup",
+		objectId: 4,
+		imgsrc:images.volto.uri,
+		imgAlt: images.volto.altText,
+		itemName: images.volto.imgName,
+		price: "15.00",
+		productType: "cup",
+		featured: false
+	},
+	{
+		objectId: 5,
+		imgsrc: images.clown.uri,
+		imgAlt: images.clown.altText,
+		itemName: images.clown.imgName,
+		price: "25.00",
+		productType: "plate",
+		featured: false
+	},
+	{
+		objectId: 6,
+		imgsrc: images.blackMask.uri,
+		imgAlt: images.blackMask.altText,
+		itemName: images.blackMask.imgName,
+		price: "20.00",
+		productType: "cup",
+		featured: false
+	},
+	{
+		objectId: 7,
+		imgsrc:images.boatMask.uri,
+		imgAlt: images.boatMask.altText,
+		itemName: images.boatMask.imgName,
 		price: "15.00",
 		productType: "cup",
 		featured: false
 	}
 ]
-
-export const FeaturedItems = products.map(function(featureItem) {
-	if(featureItem.featured === true) {
-		return (
-			<li
-				key={featureItem.itemName}
-				href={featureItem.imgSrc}
-				itemName={featureItem.itemName}
-				alt={featureItem.imgAlt}
-				price={featureItem.price}
-			/>
-		)
-	}
-});
