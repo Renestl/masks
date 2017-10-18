@@ -20,14 +20,14 @@ export const blogDropdown = [
 
 // FOOTER
 export const information = [
-	{href:'', name: 'Search'},
-	{href:'', name: 'About Us'},
-	{href:'', name: 'Home'},
-	{href:'', name: 'Blog'},
+	{href:'/search', name: 'Search'},
+	{href:'/about', name: 'About Us'},
+	{href:'/', name: 'Home'},
+	{href:'/blog', name: 'Blog'},
 ]
 
 export const myAccount = [
-	{href:'/myAccount', name: 'My Account'},
+	{href:'/account', name: 'My Account'},
 	{href:'/myAddresses', name: 'My Addresses'},
 	{href:'/myCart', name: 'My Cart'}
 ];
