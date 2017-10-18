@@ -34,7 +34,9 @@ export const infoItems = information.map((infoItem) =>
 		key={infoItem.name}
 		href={infoItem.href}
 	>
-		{infoItem.name}
+		<Link to={infoItem.href}>
+			{infoItem.name}
+		</Link>
 	</MenuItem>
 );
 
@@ -43,6 +45,8 @@ export const myAccountItems = myAccount.map((accountItem) =>
 		key={accountItem.name}
 		href={accountItem.href}
 	>
-		{accountItem.name}
+		<Link to={accountItem.href}>
+			{accountItem.name}
+		</Link>
 	</MenuItem>
 );

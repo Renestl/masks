@@ -41,7 +41,7 @@ class TopBar extends Component {
 								{blogItems}
 							</NavDropdown>
 							<NavItem className="level-1_item_link">
-								<NavLink to="/about-us">
+								<NavLink to="/about">
 									about us
 								</NavLink>
 							</NavItem>
