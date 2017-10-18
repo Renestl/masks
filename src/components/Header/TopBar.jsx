@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Navbar, Nav, NavItem, NavDropdown } from 'react-bootstrap';
+import { NavLink, Link } from 'react-router-dom';
 
 import { catalogItems, blogItems } from "../Shared/Navigation";
 
@@ -12,22 +13,25 @@ class TopBar extends Component {
 				<Navbar inverse collapseOnSelect fixedTop fluid>
 					<Navbar.Header>
 						<Navbar.Brand>
-							<a href="/">
+							<NavLink to="/">
 								<img src={images.logoWhite.uri} alt={images.logoWhite.altText} />
-							</a>
+							</NavLink>
 						</Navbar.Brand>
 						<Navbar.Toggle />
 					</Navbar.Header>
 					
 					<Navbar.Collapse>
 						<Nav pullRight>
-							<NavItem href="/" className="level-1_item_link">home</NavItem>
+							<NavItem className="level-1_item_link">
+								<Link to="/">home</Link>
+							</NavItem>
+
 							<NavDropdown 
 								title="Catalog" 
 								className="level-1_item_link"
 								id="nav-catalog-dropdown"
 							>
-								{catalogItems}						
+									{catalogItems}				
 							</NavDropdown>
 								
 							<NavDropdown 
@@ -37,9 +41,22 @@ class TopBar extends Component {
 							>
 								{blogItems}
 							</NavDropdown>
-							<NavItem href="/about-us" className="level-1_item_link">about us</NavItem>
-							<NavItem href="/contact" className="level-1_item_link">contact us</NavItem>
-							<NavItem href="/client-login" className="level-1_item_link">my account</NavItem>
+							
+							<NavItem className="level-1_item_link">
+								<NavLink to="/about">
+									about us
+								</NavLink>
+							</NavItem>
+							<NavItem className="level-1_item_link">
+								<NavLink to="/contact">
+									contact us
+								</NavLink>
+							</NavItem>
+							<NavItem className="level-1_item_link">
+								<NavLink to="/account">
+									my account
+								</NavLink>
+							</NavItem>
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>

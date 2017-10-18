@@ -1,5 +1,6 @@
 import React from 'react';
 import { MenuItem } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import {catalogDropdown, myAccount, blogDropdown, information } from '../../data/DummyData';
 
@@ -9,7 +10,9 @@ export const catalogItems = catalogDropdown.map((catalogItem) =>
 		key={catalogItem.name} 
 		href={catalogItem.href}
 	>
-		{catalogItem.name}
+		<Link to={catalogItem.href}>
+			{catalogItem.name}
+		</Link>		
 	</MenuItem>
 );
 
@@ -19,7 +22,9 @@ export const blogItems = blogDropdown.map((blogItem) =>
 	key={blogItem.name} 
 	href={blogItem.href}
 >
-	{blogItem.name}
+	<Link to={blogItem.href}>
+		{blogItem.name}
+	</Link>
 </MenuItem>
 );
 
@@ -29,7 +34,9 @@ export const infoItems = information.map((infoItem) =>
 		key={infoItem.name}
 		href={infoItem.href}
 	>
-		{infoItem.name}
+		<Link to={infoItem.href}>
+			{infoItem.name}
+		</Link>
 	</MenuItem>
 );
 
@@ -38,6 +45,8 @@ export const myAccountItems = myAccount.map((accountItem) =>
 		key={accountItem.name}
 		href={accountItem.href}
 	>
-		{accountItem.name}
+		<Link to={accountItem.href}>
+			{accountItem.name}
+		</Link>
 	</MenuItem>
 );
