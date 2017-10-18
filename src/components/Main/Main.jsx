@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom';
 
 import './Main.css';
 
@@ -15,7 +15,6 @@ class Main extends Component {
 		return (
 			<div className="main">
 				<Switch>
-
 					<Route exact path='/' component={FrontPage}/>
 					<Route path='/blog' component={Blog}/>
 					<Route path='/catalog' component={Catalog}/>
